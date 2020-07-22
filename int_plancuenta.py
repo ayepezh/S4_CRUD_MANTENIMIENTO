@@ -126,10 +126,10 @@ def ejecutarMenuG():
         if opc == '0':
             print('\n<<<Ingresar datos>>>')
             valor = input('-Ingresa la cantidad de datos a insertar: ')
-            if valor== None:
-                insertargrupo(valor)
+            if len(valor) >= 1:
+               insertargrupo(valor) 
             else:
-                ejecutarMenuG()
+               ejecutarMenuG()
         if opc == '1':
             print('\n<<<Modificar datos>>>')
             modificargrupo()
@@ -153,10 +153,10 @@ def ejecutarMenuP():
         if opc == '0':
             print('\n<<<Ingresar datos>>>')
             valor = input('-Ingresa la cantidad de datos a insertar: ')
-            if valor==None:
+            if len(valor) >= 1:
                 insertar(valor)
             else:
-                ejecutarMenuP()
+                 ejecutarMenuP()
         if opc == '1':
             print('\n<<<Modificar datos>>>')
             modificar()
